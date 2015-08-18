@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="CodeCakeVSIX.Invenietis.afaf2d58-695e-4bad-8738-afd75f7f0ef8" Version="1.0" Language="en-US" Publisher="Invenietis" />
+    <DisplayName>CodeCakeVSIX</DisplayName>
+    <Description xml:space="preserve">Simply adds a CodeCake project Template. CodeCake is a Code based approach to Cake (http://cakebuild.net/).
+CodeCake project created with the provided template enables writing/debugging build chains easily with full intellisense support.</Description>
+    <MoreInfo>https://github.com/Invenietis/CodeCakeSampleApp</MoreInfo>
+    <License>LICENSE.txt</License>
+    <Icon>CodeCake.png</Icon>
+    <Tags>Build Automation CI Cake</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CodeCake Template.zip" />
+  </Assets>
+</PackageManifest>
